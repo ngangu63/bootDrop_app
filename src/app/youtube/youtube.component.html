@@ -1,0 +1,30 @@
+
+<!--  <div *ngIf="videoId">
+    <iframe width="560" height="315" [src]="'https://www.youtube.com/embed/' + videoId" 
+      title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div *ngIf="!videoId">
+    <p>No video selected.</p>
+  </div>  -->
+  
+<!--   <div class="container">
+    <div class="video-container">
+      <iframe
+        *ngIf="sanitizedUrl"
+        [src]="sanitizedUrl"
+        frameborder="0"
+        height="100vh"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div> -->
+
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" 
+    *ngIf="sanitizedUrl"
+    [src]="sanitizedUrl"
+    allowfullscreen
+    
+    ></iframe>
+  </div>

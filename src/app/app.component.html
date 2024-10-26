@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                <a class="nav-link active" aria-current="page" href="/Accueil">Accueil</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -58,8 +58,21 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Messages</a>
+                <a class="nav-link" href="/Messages">Messages</a>
               </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="loisirDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Loisir
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="loisirDropdown">
+                  <li><a class="dropdown-item" [routerLink]="['/Jesus', '-j3vHpKzJ3c']">Jesus</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/Jeunesse', 'gIfxaiLOjPQ']">Jeunesse</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/Mikolo', 'VpvDSz8skb8']">Hummm</a></li>
+                </ul>
+              </li>
+
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -71,25 +84,9 @@
     </div>
   </div>
 
-<!--   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </div>
-  </div> -->
-
-    <!-- Hero -->
-    <div class="p-5 text-center bg-body-tertiary" style="width: 100%;margin: auto; height: 100vh;">
-      <h1 class="mb-3">
-        <span class="align-middle">
-          <p class="fw-lighter" style="color: blue;">
-           Nous, ressortissants de Lukala, vous souhaitons la bienvenue sur notre interface.
-          </p>
-        </span>
-      </h1>
-    </div>
-    
-    <!-- Hero -->
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 
 
   <div class="fixed-bottom">
