@@ -1,5 +1,5 @@
 <div class="slider-container">
-    <div class="controls">
+    <div class="controls" style="margin-top: 5px; margin-bottom: 5px;">
         <button (click)="previousSlide()" [disabled]="currentSlideIndex === 0">Précédent</button>
         <button (click)="nextSlide()" [disabled]="(currentSlideIndex + 1) * (numberpicture) >= pictures.length">Suivant</button>
       </div>

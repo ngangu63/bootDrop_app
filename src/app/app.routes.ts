@@ -14,8 +14,8 @@ import { OthersMembersComponent } from './others-members/others-members.componen
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Accueil', component: HomeComponent },
-  {path: 'LesDirigeants', component: LesDirigeantsComponent},
-  {path: 'TousLesMembres', component: OthersMembersComponent},
+  { path: 'LesDirigeants', component: LesDirigeantsComponent },
+  { path: 'TousLesMembres', component: OthersMembersComponent },
   { path: 'Contact', component: ContactComponent },
   { path: 'Finance', component: FinanceComponent },
   { path: 'Jesus/:videoId', component: YoutubeComponent },
