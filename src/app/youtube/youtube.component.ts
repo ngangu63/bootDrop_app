@@ -13,22 +13,6 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export class YoutubeComponent implements OnInit {
 
-
-
-
-  /*  videoId: string | null = '';
-  
-    constructor(private route: ActivatedRoute) {}
-  
-    ngOnInit(): void {
-      this.route.paramMap.subscribe(params => {
-        this.videoId = params.get('id');
-      });
-    }
-  } */
-
-
-
   videoId: string | null = '';
   videoUrl: string = '';
   sanitizedUrl: SafeResourceUrl | null = null;
