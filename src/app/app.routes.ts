@@ -6,14 +6,14 @@ import { MessagesComponent } from './messages/messages.component';
 import { ROIComponent } from './roi/roi.component';
 import { StatusComponent } from './status/status.component';
 import { ContactComponent } from './contact/contact.component';
-import { DirigeantComponent } from './dirigeant/dirigeant.component';
 import { FinanceComponent } from './finance/finance.component';
+import { LesDirigeantsComponent } from './les-dirigeants/les-dirigeants.component';
 
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Accueil', component: HomeComponent },
-   {path: 'Dirigeant', component: DirigeantComponent},
+   {path: 'LesDirigeants', component: LesDirigeantsComponent},
   { path: 'Contact', component: ContactComponent },
   { path: 'Finance', component: FinanceComponent },
   { path: 'Jesus/:videoId', component: YoutubeComponent },
