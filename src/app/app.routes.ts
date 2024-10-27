@@ -8,17 +8,20 @@ import { StatusComponent } from './status/status.component';
 import { ContactComponent } from './contact/contact.component';
 import { FinanceComponent } from './finance/finance.component';
 import { LesDirigeantsComponent } from './les-dirigeants/les-dirigeants.component';
+import { OthersMembersComponent } from './others-members/others-members.component';
 
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Accueil', component: HomeComponent },
-   {path: 'LesDirigeants', component: LesDirigeantsComponent},
+  {path: 'LesDirigeants', component: LesDirigeantsComponent},
+  {path: 'TousLesMembres', component: OthersMembersComponent},
   { path: 'Contact', component: ContactComponent },
   { path: 'Finance', component: FinanceComponent },
   { path: 'Jesus/:videoId', component: YoutubeComponent },
   { path: 'Jeunesse/:videoId', component: YoutubeComponent },
   { path: 'Mikolo/:videoId', component: YoutubeComponent },
+  { path: 'Souvenir/:videoId', component: YoutubeComponent },
   { path: 'Messages', component: MessagesComponent },
   { path: 'ROI', component: ROIComponent },
   { path: 'Status', component: StatusComponent },
