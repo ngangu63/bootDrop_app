@@ -34,8 +34,8 @@ export class LesDirigeantsComponent {
     
     { name: 'Niko J T Bubuzi', role: 'Conseiller , ', location: 'France', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
     { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
     
-    { name: 'Germaine Nsenga', role: 'Conseillère , ', location: 'France', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
     
 
   ];

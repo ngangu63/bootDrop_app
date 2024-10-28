@@ -18,66 +18,22 @@ export interface Picture {
 export class OthersMembersComponent {
   numberpicture = 4;
   pictures: Picture[] = [
-    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Junior Nzingu', role: 'Vice-Président Afrique , ', location: 'DR Congo', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Gerry Mabiala', role: 'Vice-Président Amerique , ', location: "États-Unis", imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Antoine Dede Kavungu', role: 'Vice-Président Europe , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Mitouche', role: 'Commissaire aux comptes , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
+
+    { name: 'Germaine Nsenga', role: 'Membre , ', location: 'France', imageUrl: 'assets/images/dirigeants/NsengaGermaine.jpeg' },
+    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Junior Nzingu', role: 'Vice-Président Afrique , ', location: 'DR Congo', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Gerry Mabiala', role: 'Vice-Président Amerique , ', location: "États-Unis", imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Antoine Dede Kavungu', role: 'Vice-Président Europe , ', location: 'France', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Mitouche', role: 'Commissaire aux comptes , ', location: 'France', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
+    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
     
-    
-    { name: 'Niko J T Bubuzi', role: 'Conseiller , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    
-    { name: 'Germaine Nsenga', role: 'Conseillère , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Junior Nzingu', role: 'Vice-Président Afrique , ', location: 'DR Congo', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Gerry Mabiala', role: 'Vice-Président Amerique , ', location: "États-Unis", imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Antoine Dede Kavungu', role: 'Vice-Président Europe , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Mitouche', role: 'Commissaire aux comptes , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    
-    
-    { name: 'Niko J T Bubuzi', role: 'Conseiller , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    
-    { name: 'Germaine Nsenga', role: 'Conseillère , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Junior Nzingu', role: 'Vice-Président Afrique , ', location: 'DR Congo', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Gerry Mabiala', role: 'Vice-Président Amerique , ', location: "États-Unis", imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Antoine Dede Kavungu', role: 'Vice-Président Europe , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Mitouche', role: 'Commissaire aux comptes , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    
-    
-    { name: 'Niko J T Bubuzi', role: 'Conseiller , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    
-    { name: 'Germaine Nsenga', role: 'Conseillère , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Junior Nzingu', role: 'Vice-Président Afrique , ', location: 'DR Congo', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Gerry Mabiala', role: 'Vice-Président Amerique , ', location: "États-Unis", imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Antoine Dede Kavungu', role: 'Vice-Président Europe , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Mitouche', role: 'Commissaire aux comptes , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    
-    
-    { name: 'Niko J T Bubuzi', role: 'Conseiller , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
-    
-    { name: 'Germaine Nsenga', role: 'Conseillère , ', location: 'France', imageUrl: 'assets/images/membres/remy_IMG_1871.jpg' },
+ 
+ 
     
 
   ];
