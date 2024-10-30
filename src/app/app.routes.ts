@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FinanceComponent } from './finance/finance.component';
 import { LesDirigeantsComponent } from './les-dirigeants/les-dirigeants.component';
 import { OthersMembersComponent } from './others-members/others-members.component';
+import { DeclIntentionComponent } from './decl-intention/decl-intention.component';
 
 
 export const routes: Routes = [
@@ -22,9 +23,11 @@ export const routes: Routes = [
   { path: 'Jeunesse/:videoId', component: YoutubeComponent },
   { path: 'Mikolo/:videoId', component: YoutubeComponent },
   { path: 'Souvenir/:videoId', component: YoutubeComponent },
+  { path: 'Longo/:videoId', component: YoutubeComponent },
   { path: 'Messages', component: MessagesComponent },
   { path: 'ROI', component: ROIComponent },
   { path: 'Status', component: StatusComponent },
+  { path: 'Intention', component: DeclIntentionComponent },
   { path: '**', component: HomeComponent }
 ];
 
