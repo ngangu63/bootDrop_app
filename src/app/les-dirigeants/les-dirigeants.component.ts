@@ -6,6 +6,7 @@ export interface Picture {
   role: string;
   location: string;
   imageUrl: string;
+  defaultImage: string;
 }
 
 
@@ -21,24 +22,27 @@ export class LesDirigeantsComponent {
   numberpicture = 4;
 
   pictures: Picture[] = [
-    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Junior Nzingu', role: 'Vice-Président Afrique , ', location: 'DR Congo', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Gerry Mabiala', role: 'Vice-Président Amerique , ', location: "États-Unis", imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Antoine Dede Kavungu', role: 'Vice-Président Europe , ', location: 'France', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Mitouche', role: 'Commissaire aux comptes , ', location: 'France', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    
-    
-    { name: 'Niko J T Bubuzi', role: 'Conseiller , ', location: 'France', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: 'assets/images/dirigeants/remy_IMG_1871.jpg' },
-    
-    
+    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/Remy_Cravate1.jpg', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Junior Nzingu', role: 'Vice-Président Afrique , ', location: 'DR Congo', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Gerry Mabiala', role: 'Vice-Président Amerique , ', location: "États-Unis", imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Antoine Dede Kavungu', role: 'Vice-Président Europe , ', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: '', defaultImage: 'assets/images/RoseFlour.jpeg' },
+    { name: 'Coco Mitouche', role: 'Commissaire aux comptes , ', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/Remy_Cravate1.jpg', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+
+
+    { name: 'Niko', role: 'Conseiller , ', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+
+
+
 
   ];
+  
+
 
   currentSlideIndex = 0;
 
@@ -83,4 +87,3 @@ export class LesDirigeantsComponent {
     }
   }
 }
-
