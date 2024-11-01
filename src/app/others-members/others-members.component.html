@@ -1,23 +1,24 @@
 <div class="slider-container">
   <div class="controls" style="margin-top: 5px; margin-bottom: 60px;">
 
-      <button type="button" class="btn btn-primary btn-sm" (click)="previousSlide()" style="margin-right: 5px; margin-bottom: 2px;"
-        [disabled]="currentSlideIndex === 0">Précédent</button>
-
-       
-      <button type="button" class="btn btn-primary btn-sm" (click)="nextSlide()" style="margin-left: 5px; margin-bottom: 2px;"
-        [disabled]="(currentSlideIndex + 1) * (numberpicture)>= pictures.length">Suivant</button>
+    <button type="button" class="btn btn-primary btn-sm" (click)="previousSlide()"
+      style="margin-right: 5px; margin-bottom: 2px;" [disabled]="currentSlideIndex === 0">Précédent</button>
 
 
-    <div class="picture-grid">
+    <button type="button" class="btn btn-primary btn-sm" (click)="nextSlide()"
+      style="margin-left: 5px; margin-bottom: 2px;"
+      [disabled]="(currentSlideIndex + 1) * (numberpicture)>= pictures.length">Suivant</button>
+
+
+    <div class="picture-grid" style="width: 95%; margin-left: 35px;">
       <div *ngFor="let picture of currentPictures" class="picture-card" (click)="openPicture(picture)">
 
         <img *ngIf="picture.imageUrl; else defaultImage" [src]="picture.imageUrl" alt="{{ picture.name }}"
-          style=" width: 300px; height: 350px;" />
+          style=" width: 250px; height: 300px;" />
 
         <ng-template #defaultImage>
           <img [src]="picture.defaultImage" alt="{{ picture.name }}"
-            style=" width: 300px; height: 350px; filter: blur(8px);" />
+            style=" width: 250px; height: 300px; filter: blur(8px);" />
         </ng-template>
 
 
@@ -27,6 +28,7 @@
             </span> </p>
         </div>
       </div>
+
     </div>
 
   </div>

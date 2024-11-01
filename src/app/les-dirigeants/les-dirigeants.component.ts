@@ -1,14 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-export interface Picture {
-  name: string;
-  role: string;
-  location: string;
-  imageUrl: string;
-  defaultImage: string;
-}
-
+import { BigPicture } from '../big-picture';
+import { BigPictureService } from '../big-picture.service';
 
 @Component({
   selector: 'app-les-dirigeants',
@@ -17,37 +10,36 @@ export interface Picture {
   templateUrl: './les-dirigeants.component.html',
   styleUrl: './les-dirigeants.component.css'
 })
-export class LesDirigeantsComponent {
+export class LesDirigeantsComponent implements OnInit {
 
+
+  pictures: BigPicture[] = [];
   numberpicture = 4;
 
-  pictures: Picture[] = [
-    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/Remy_Cravate1.jpg', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Junior Nzingu', role: 'Vice-Président Afrique , ', location: 'DR Congo', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Gerry Mabiala', role: 'Vice-Président Amerique , ', location: "États-Unis", imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Antoine Dede Kavungu', role: 'Vice-Président Europe , ', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    // { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: '', defaultImage: 'assets/images/RoseFlour.jpeg' },
-    { name: 'Coco Mitouche', role: 'Commissaire aux comptes , ', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/Remy_Cravate1.jpg', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Niko J T Bubuzi', role: 'Conseiller , ', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+  constructor(private pictureService: BigPictureService) { }
 
+  ngOnInit(): void {
+    // Get the entire array of Pictures
+    this.pictures = this.pictureService.getBigPictures();
+    this.getDirigeantMemberPicture(this.pictures);
 
-
-
-  ];
-  
-
+  }
 
   currentSlideIndex = 0;
 
-  get currentPictures(): Picture[] {
-    const start = this.currentSlideIndex * this.numberpicture ;
-    return this.pictures.slice(start, start + this.numberpicture );
+
+  getDirigeantMemberPicture(pictures: BigPicture[]) {
+    let Mypictures: BigPicture[] = [];
+    for (let i = 0; i < pictures.length; i++) {
+      if (pictures[i].role) Mypictures.push(pictures[i]);
+    }
+    this.pictures = Mypictures;
+  }
+
+
+  get currentPictures(): BigPicture[] {
+    const start = this.currentSlideIndex * this.numberpicture;
+    return this.pictures.slice(start, start + this.numberpicture);
   }
 
   nextSlide() {
@@ -62,7 +54,7 @@ export class LesDirigeantsComponent {
     }
   }
 
-  openPicture(picture: Picture): void {
+  openPicture(picture: BigPicture): void {
     const popup = window.open('', '_blank', 'width=400,height=400');
     if (popup) {
       popup.document.write(`

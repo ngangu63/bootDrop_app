@@ -1,3 +1,4 @@
+
 <div>
   <div>
     <div class="p-5 text-center bg-image rounded-3" style="
@@ -87,8 +88,8 @@
 
             </ul>
             <form  *ngIf="isSearchEnabled" class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button  class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -97,6 +98,7 @@
   </div>
 
   <div>
+
     <router-outlet (activate)="onChildActivate($event)"></router-outlet>
   </div>
 
