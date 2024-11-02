@@ -28,6 +28,6 @@ export class AppComponent {
   onChildActivate(componentRef: any) {
     // Enable search only for certain child components
     this.isSearchEnabled = componentRef instanceof LesDirigeantsComponent || componentRef instanceof OthersMembersComponent;
-    console.log(this.isSearchEnabled);
+  
   }
 }
