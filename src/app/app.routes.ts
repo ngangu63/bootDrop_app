@@ -23,6 +23,7 @@ export const routes: Routes = [
   { path: 'Jeunesse/:videoId', component: YoutubeComponent },
   { path: 'Mikolo/:videoId', component: YoutubeComponent },
   { path: 'Souvenir/:videoId', component: YoutubeComponent },
+  { path: 'UncleSam/:videoId', component: YoutubeComponent },
   // { path: 'Longo/:videoId', component: YoutubeComponent },
   { path: 'Messages', component: MessagesComponent },
   { path: 'ROI', component: ROIComponent },
