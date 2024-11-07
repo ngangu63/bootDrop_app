@@ -9,7 +9,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
   styleUrl: './status.component.css'
 })
 export class StatusComponent {
-  pdfSrc = "assets/pdfs/Projet_de_Statuts.pdf";
+  pdfSrc = "assets/pdfs/Projet_de_Statuts_ren.pdf";
 
 }
 

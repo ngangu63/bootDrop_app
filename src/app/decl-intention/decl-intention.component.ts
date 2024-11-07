@@ -9,7 +9,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
   styleUrl: './decl-intention.component.css'
 })
 export class DeclIntentionComponent {
-  pdfSrc = "assets/pdfs/DeclarationDintention.pdf";
+  pdfSrc = "assets/pdfs/Déclaration_d_Intention_Ren.pdf";
 }
 
 
