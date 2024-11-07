@@ -9,7 +9,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
   styleUrl: './roi.component.css'
 })
 export class ROIComponent {
-  pdfSrc = "assets/pdfs/Lukala Ngangu_ROI_Ren.pdf";
+  pdfSrc = "assets/pdfs/LukalaNganguROI1.pdf";
 
 }
 
