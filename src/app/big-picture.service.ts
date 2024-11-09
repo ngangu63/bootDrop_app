@@ -35,7 +35,7 @@ export class BigPictureService {
     { name: 'Dieu Kindomba', role: '', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Donat Bitazi', role: '', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Emma Kindomba', role: '', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Felicien kindomba', role: '', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
+    { name: 'Felicien Kindomba', role: '', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Françoise Mankuika', role: '', location: 'Angleterre', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Gina Kiaku ', role: '', location: 'France', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Johnson Tamba ', role: '', location: 'Afrique du Sud', imageUrl: '', defaultImage: 'assets/images/Remy_Cravate1.jpg' },
