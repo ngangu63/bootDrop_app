@@ -12,7 +12,7 @@
       [disabled]="(currentSlideIndex + 1) * (numberpicture)>= pictures.length">Suivant</button>
 
 
-    <div class="picture-grid" style="width: 95%; margin-left: 35px;">
+    <div class="picture-grid" style="width: 95%; margin-left: 10%; margin-right: 10%;">
       <div *ngFor="let picture of currentPictures" class="picture-card" (click)="openPicture(picture)">
 
         <img *ngIf="picture.imageUrl; else defaultImage" [src]="picture.imageUrl" alt="{{ picture.name }}"

@@ -13,7 +13,7 @@ import { BigPictureService } from '../big-picture.service';
 export class OthersMembersComponent implements OnInit {
 
   pictures: BigPicture[] = [];
-  numberpicture = 4;
+  numberpicture = 3;
   
   constructor(private pictureService: BigPictureService) { }
 

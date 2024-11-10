@@ -14,7 +14,7 @@ export class LesDirigeantsComponent implements OnInit {
 
 
   pictures: BigPicture[] = [];
-  numberpicture = 4;
+  numberpicture = 3;
 
   constructor(private pictureService: BigPictureService) { }
 
