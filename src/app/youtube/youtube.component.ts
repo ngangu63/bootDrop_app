@@ -88,7 +88,7 @@ export class YoutubeComponent implements OnInit {
 
 
     if (this.currentName1.gender === Gender.female) {
-      this.currentColor1 = 'red';
+      this.currentColor1 = '#F33A6A';
     } else {
       this.currentColor1 = this.currentColor1 === 'blue' ? 'green' : 'blue';
     }
@@ -99,7 +99,7 @@ export class YoutubeComponent implements OnInit {
 
 
     if (this.currentName2.gender === Gender.female) {
-      this.currentColor2 = 'red';
+      this.currentColor2 = '#F33A6A';
     } else {
       this.currentColor2 = this.currentColor1 === 'green' ? 'blue' : 'green';
     }
@@ -111,7 +111,7 @@ export class YoutubeComponent implements OnInit {
 
 
     if (this.currentName3.gender === Gender.female) {
-      this.currentColor3 = 'red';
+      this.currentColor3 = '#F33A6A';
     } else {
       this.currentColor3 = this.currentColor2 === 'blue' ? 'green' : 'blue';
     }
