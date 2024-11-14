@@ -1,30 +1,21 @@
-/*  .scrolling-text {
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-    font-size: 24px;
-    color: blue;
-    text-align: start;
-    animation: scroll-text 10s linear infinite;
-    white-space: nowrap;
+.scrolling-text {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
   }
-  
-  .scrolling-text.center {
-    color: red; 
-    animation-play-state: paused; 
-    text-align: center;
+  to {
+    transform: translateX(-100%);
   }
-   */
-  /* 
-  @keyframes scroll-text {
-    0% {
-      transform: translateX(100%);
-    }
-    50% {
-      transform: translateX(0); 
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  } */
-   
+}
+
