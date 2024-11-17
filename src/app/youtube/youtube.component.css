@@ -8,6 +8,7 @@
   font-weight: bold;
   white-space: nowrap;
   font-style: italic;
+  word-wrap: break-word;
   /* overflow: hidden; */
   animation: scroll 20s linear infinite;
 }
