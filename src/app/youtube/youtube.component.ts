@@ -127,8 +127,8 @@ export class YoutubeComponent implements OnInit {
 
     const randomIndex4 = 0;
     this.currentName4 = null;
-    //this.htmlName4 = "La réunion de l'assemblée générale de l'organisation Lukalangunu se tiendra le 24 novembre 2024 à 22h00, heure de Paris. La présence de tous les membres est vivement attendue.";
-    this.htmlName4 = "";
+    this.htmlName4 = "La réunion de l'assemblée générale de l'organisation Lukalangunu se tiendra le 24 novembre 2024 à 22h00, heure de Paris. La présence de tous les membres est vivement attendue.";
+    //this.htmlName4 = "";
   }
 }
 
