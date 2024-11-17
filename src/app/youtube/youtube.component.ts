@@ -33,6 +33,7 @@ export class YoutubeComponent implements OnInit {
   sanitizedUrl: SafeResourceUrl | null = null;
   index: number = 0;
 
+  myBoolean: boolean = true;
 
   currentName1: BigPicture | null = null;
   htmlName1: String = "";
@@ -70,7 +71,7 @@ export class YoutubeComponent implements OnInit {
 
   startNameScrolling(): void {
     this.updateName();
-    setInterval(() => this.updateName(), 10000); // Change name every 5 seconds
+    setInterval(() => this.updateName(), 20000); // Change name every 5 seconds
   }
 
 
@@ -129,6 +130,14 @@ export class YoutubeComponent implements OnInit {
     this.currentName4 = null;
     this.htmlName4 = "La réunion de l'assemblée générale de l'organisation Lukalangangu se tiendra le 24 Novembre 2024 à 22h00, heure de Paris. La présence de tous les membres est vivement attendue.";
     //this.htmlName4 = "";
+
+    this.toggleValue();
+  }
+
+  
+
+  toggleValue() {
+    this.myBoolean = !this.myBoolean;
   }
 }
 
