@@ -43,9 +43,13 @@ export class YoutubeComponent implements OnInit {
   currentName3: BigPicture | null = null;
   htmlName3: String = "";
 
+  currentName4: BigPicture | null = null;
+  htmlName4: String = "";
+
   currentColor1: string = 'blue';
   currentColor2: string = 'green';
   currentColor3: string = 'blue';
+  currentColor4: string = 'black';
 
   constructor(private route: ActivatedRoute, private pictureService: BigPictureService, private sanitizer: DomSanitizer) { }
 
@@ -121,6 +125,10 @@ export class YoutubeComponent implements OnInit {
       this.index = 0;
     }
 
+    const randomIndex4 = 0;
+    this.currentName4 = null;
+    //this.htmlName4 = "La réunion de l'assemblée générale de l'organisation Lukalangunu se tiendra le 24 novembre 2024 à 22h00, heure de Paris. La présence de tous les membres est vivement attendue.";
+    this.htmlName4 = "";
   }
 }
 

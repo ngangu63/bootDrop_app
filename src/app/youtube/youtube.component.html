@@ -9,7 +9,7 @@
 </div>
 
 
-<div *ngIf="currentName1 || currentName2 || currentName3" class="scrolling-text"
+<div *ngIf="(currentName1 || currentName2 || currentName3) && !htmlName4" class="scrolling-text"
   style="width: 95vw; height: 10vh; position: relative; margin-bottom: 35px; z-index: 20;">
   <span [ngStyle]="{ 'color': currentColor1 }">{{ htmlName1 }}</span>
   <span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
@@ -18,4 +18,11 @@
   <span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
 
   <span [ngStyle]="{ 'color': currentColor3 }">{{ htmlName3 }}</span>
+</div>
+
+<div *ngIf="htmlName4" class="scrolling-text"
+  style="width: 95vw; height: 10vh; position: relative; margin-bottom: 35px; z-index: 20;">
+
+  <span [ngStyle]="{ 'color': currentColor4 }">{{ htmlName4 }}</span>
+  
 </div>

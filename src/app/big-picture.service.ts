@@ -21,7 +21,7 @@ export class BigPictureService {
     { name: 'Daniel Meboya', role: 'Coordonnateur  , ', location: 'Ouganda', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Niko J T Bubuzi', role: 'Conseiller , ', location: 'France', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Mathieu Tusalamo', role: 'Conseiller , ', location: 'DR Congo', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-
+    { name: 'Aisé Ngeyitala ', role: '', location: 'États - Unis', imageUrl: 'assets/images/membres/AiseMiantezila.jpeg', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
 
     { name: 'Marcelline Mboyi', role: '', location: 'Angletere', imageUrl: 'assets/images/membres/Marceline1Mboyi.jpg', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Clémentine Buaka', role: '', location: 'France', imageUrl: '', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
@@ -65,7 +65,6 @@ export class BigPictureService {
     { name: 'Bulay', role: '', location: 'France', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Glody Ngeyitala ', role: '', location: 'États - Unis', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Edo Makobokele', role: '', location: 'France', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
-    { name: 'Aisé Ngeyitala ', role: '', location: 'États - Unis', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
     { name: 'Ma Maguy', role: '', location: 'France', imageUrl: '', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg' },
 
 
