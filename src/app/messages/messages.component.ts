@@ -9,5 +9,5 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
   styleUrl: './messages.component.scss'
 })
 export class MessagesComponent {
-  pdfSrc = "assets/pdfs/Message_pour_Lukala4.pdf";
+  pdfSrc = "assets/pdfs/Reunion.pdf";
 }
