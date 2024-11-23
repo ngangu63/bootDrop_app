@@ -21,6 +21,7 @@ export const routes: Routes = [
   { path: 'Finance', component: FinanceComponent },
   { path: 'Jesus1/:videoId', component: YoutubeComponent },
   { path: 'Jesus2/:videoId', component: YoutubeComponent }, 
+  { path: 'Jesus3/:videoId', component: YoutubeComponent }, 
   { path: 'Kelya/:videoId', component: YoutubeComponent },
   { path: 'Mikolo/:videoId', component: YoutubeComponent },
   { path: 'Longo/:videoId', component: YoutubeComponent },
