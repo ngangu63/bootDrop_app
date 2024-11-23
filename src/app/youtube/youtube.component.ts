@@ -71,7 +71,7 @@ export class YoutubeComponent implements OnInit {
 
   startNameScrolling(): void {
     this.updateName();
-    setInterval(() => this.updateName(), 20000); // Change name every 5 seconds
+    setInterval(() => this.updateName(), 10000); // Change name every 5 seconds
   }
 
 
@@ -137,7 +137,7 @@ export class YoutubeComponent implements OnInit {
   
 
   toggleValue() {
-    this.myBoolean = !this.myBoolean;
+    //this.myBoolean = !this.myBoolean;
   }
 }
 

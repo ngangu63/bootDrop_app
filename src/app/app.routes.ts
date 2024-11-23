@@ -20,7 +20,7 @@ export const routes: Routes = [
   { path: 'Contact', component: ContactComponent },
   { path: 'Finance', component: FinanceComponent },
   { path: 'Jesus1/:videoId', component: YoutubeComponent },
-  { path: 'Jesus2/:videoId', component: YoutubeComponent },
+  { path: 'Jesus2/:videoId', component: YoutubeComponent }, 
   { path: 'Kelya/:videoId', component: YoutubeComponent },
   { path: 'Mikolo/:videoId', component: YoutubeComponent },
   { path: 'Longo/:videoId', component: YoutubeComponent },

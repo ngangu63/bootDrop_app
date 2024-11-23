@@ -10,4 +10,7 @@ export interface BigPicture {
     imageUrl: string;
     gender: Gender;
     defaultImage: string;
+    profession: string;
+    message: string;
+    LinkedIn : string;
 }

@@ -27,3 +27,10 @@
 .info {
   margin-top: 8px;
 }
+
+.mycontainer {
+  height: 250px; /* Set height for demonstration */
+  border: 1px solid transparent; 
+  padding-top: 0; /* No padding by default */
+  display: block; /* Default block behavior aligns text to the top */
+}
