@@ -9,7 +9,7 @@ export class BigPictureService {
   constructor() { }
 
   private bigPictures: BigPicture[] = [
-    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Royaume-Uni', imageUrl: 'assets/images/dirigeants/LeopoldNgoma0.jpeg', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
+    { name: 'Léopold Ngoma', role: 'Président , ', location: 'Angletere', imageUrl: 'assets/images/dirigeants/LeopoldNgoma0.jpeg', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Remy Miantezila', role: 'Conseiller , Webmaster ; ', location: 'États-Unis', imageUrl: 'assets/images/Remy_Cravate1.jpg', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: 'Software Engineer', message: 'I love you All', LinkedIn: 'https://www.linkedin.com/in/remy-miantezila-miabwa/' },
     { name: 'Eugenie Malayi', role: 'Trésorière , ', location: 'Canada', imageUrl: 'assets/images/dirigeants/EugenieMalayi.jpg', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Pascal Mieluzeyi', role: 'Secrétaire , ', location: 'Canada', imageUrl: 'assets/images/dirigeants/Pascal5Mieluzeyi.jpg', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
