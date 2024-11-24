@@ -25,7 +25,6 @@ export const routes: Routes = [
   { path: 'Kelya/:videoId', component: YoutubeComponent },
   { path: 'Mikolo/:videoId', component: YoutubeComponent },
   { path: 'Longo/:videoId', component: YoutubeComponent },
-  { path: 'PointFinal/:videoId', component: YoutubeComponent },
   { path: 'Souvenir1/:videoId', component: YoutubeComponent },
   { path: 'Souvenir2/:videoId', component: YoutubeComponent },
   { path: 'Souvenir3/:videoId', component: YoutubeComponent },
