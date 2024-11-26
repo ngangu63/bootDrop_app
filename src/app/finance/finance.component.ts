@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './finance.component.css'
 })
 export class FinanceComponent implements OnInit{
+
+
   excelData: any[]=[];
 
   ngOnInit(): void {
@@ -19,7 +21,7 @@ export class FinanceComponent implements OnInit{
 
   loadExcelFile() {
     // Path to the Excel file in the assets folder
-    const filePath = 'assets/Excells/cotisation2.xlsx';
+    const filePath = 'assets/Excells/CotisationSpeciale1.xlsx';
 
     fetch(filePath)
       .then(response => response.arrayBuffer())
@@ -33,5 +35,9 @@ export class FinanceComponent implements OnInit{
         console.error('Error reading the Excel file:', error);
       });
   }
+
+
+
+
 
 }
