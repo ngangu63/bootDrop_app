@@ -7,19 +7,29 @@ import { CommonModule } from '@angular/common';
 import { LesDirigeantsComponent } from './les-dirigeants/les-dirigeants.component';
 import { BigPicture } from './big-picture';
 import { BigPictureService } from './big-picture.service';
+import { FormsModule } from '@angular/forms';
+import { Observable, of } from 'rxjs';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MyfooterComponent, RouterModule, CommonModule],
+  imports: [RouterOutlet, MyfooterComponent, RouterModule, CommonModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
+
   title = 'myDropDown-app';
   isSearchEnabled: boolean = false;
- 
+  searchQuery: string ="";
+  searchResults: BigPicture[] = [];
+
+  constructor(private pictureService: BigPictureService) { }
+
+
   toggleSearch(enable: boolean) {
     this.isSearchEnabled = enable;
   }
@@ -30,4 +40,14 @@ export class AppComponent {
     this.isSearchEnabled = componentRef instanceof LesDirigeantsComponent || componentRef instanceof OthersMembersComponent;
   
   }
+
+  onSearch(): void{
+   
+    if (this.searchQuery.trim()) {
+    this.searchResults= this.pictureService.getBigPictureByName(this.searchQuery);   
+    }
+    console.log(this.searchResults);
+  }
+  
+
 }

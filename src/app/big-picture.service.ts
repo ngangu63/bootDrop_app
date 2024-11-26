@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BigPicture } from './big-picture';
+import { Observable , of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -78,10 +79,20 @@ export class BigPictureService {
     return this.bigPictures;
   }
 
-  // Method to return a Picture by name
-  getBigPictureByName(name: string): BigPicture | undefined {
-    return this.bigPictures.find(picture => picture.name.toLowerCase().includes(name.toLowerCase()));
+  searchBigPictureByName(query: string): Observable<BigPicture[]|undefined> {
+    const filteredNames = this.bigPictures.filter(picture=>
+      picture.name.toLowerCase().includes(query.toLowerCase())
+    );
+    return of(filteredNames); // Simulating an API call
   }
+
+  // Method to return a Picture by name
+  getBigPictureByName(name: string): BigPicture[] {
+    return this.bigPictures.filter(picture => picture.name.toLowerCase().includes(name.toLowerCase()));
+  }
+
+
+
 
   // Method to return a Picture by array index
   getBigPictureByIndex(index: number): BigPicture | undefined {
