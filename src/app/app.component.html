@@ -1,4 +1,4 @@
-<div  style="width: 95%;margin: auto;">
+<div style="width: 95%;margin: auto;">
   <div>
     <div class="p-5 text-center bg-image rounded-3" style="
     background-image: url('assets/images/CantineVersion2.jpg');
@@ -77,18 +77,20 @@
                   Loisir
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="loisirDropdown">
-                  <li><a class="dropdown-item" [routerLink]="['/Jesus1', '-j3vHpKzJ3c']">La grandeur de l'Eternel</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/Jesus1', '-j3vHpKzJ3c']">La grandeur de l'Eternel</a>
+                  </li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Jesus2', '1FEjWbRceBg']">Mwana na mpate</a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Jesus3', 'hcpvlVyXT2A']">Mokolo ya massiya</a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Kelya', '-t6_DXt7jW8']">Kelya</a></li>
-                  <hr class="dropdown-divider"> 
+                  <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Mikolo', 'VpvDSz8skb8']">Hortense</a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Longo', 'NzLK08ISCbU']">Longo</a></li>
-                  <hr class="dropdown-divider"><li><a class="dropdown-item" [routerLink]="['/Souvenir1', 'l77Hw47dEDE']">Lemba Lemba</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" [routerLink]="['/Souvenir1', 'l77Hw47dEDE']">Lemba Lemba</a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Souvenir2', 'xhxM5RqqDf0']">Matoba</a></li>
                   <hr class="dropdown-divider">
@@ -99,25 +101,13 @@
               </li>
 
             </ul>
-<!--              <form *ngIf="isSearchEnabled" class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>  -->
-            
+
             <form *ngIf="isSearchEnabled" class="d-flex" role="search" (ngSubmit)="onSearch()">
-              <input 
-                [(ngModel)]="searchQuery"
-                name="search"
-                class="form-control me-2" 
-                type="search" 
-                placeholder="Search" 
-                aria-label="Search" 
-                required>
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input [(ngModel)]="searchQuery" name="search" class="form-control me-2" type="search"
+                placeholder="Search" aria-label="Search" required>
+              <button class="btn btn-outline-success" type="submit" class="picture-card" data-bs-toggle="modal"
+                data-bs-target="#searchModal" (click)="onSearch()">Search</button>
             </form>
-
-
-
 
           </div>
         </div>
@@ -127,6 +117,51 @@
 
   <div>
     <router-outlet (activate)="onChildActivate($event)"></router-outlet>
+  </div>
+
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="searchModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">{{personName}}</h4>
+          <button type="button" class="btn-close" (click)="CloseModel()" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container mt-5">
+            <div class="row align-items-center">
+              <!-- Picture Section -->
+              <div class="col-md-6">
+                <img [src]="modalPicture" alt="Sample Image" class="img-fluid rounded">
+              </div>
+              <!-- Description Section -->
+              <div class="col-md-6">
+                <div>
+                  <h4 class="mb-3 mycontainer">À propos de moi</h4>
+                  <div style="text-align: center;">
+                    <p>
+                      {{message}}
+                    </p>
+
+                  </div>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" (click)="CloseModel()" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <div class="fixed-bottom">

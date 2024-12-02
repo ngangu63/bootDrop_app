@@ -27,6 +27,11 @@ export class AppComponent {
   searchQuery: string ="";
   searchResults: BigPicture[] = [];
 
+  modalPicture: string ="";
+  message: string ="";
+  personName: string ="";
+
+
   constructor(private pictureService: BigPictureService) { }
 
 
@@ -44,10 +49,22 @@ export class AppComponent {
   onSearch(): void{
    
     if (this.searchQuery.trim()) {
-    this.searchResults= this.pictureService.getBigPictureByName(this.searchQuery);   
+    this.searchResults= this.pictureService.getBigPictureByName(this.searchQuery);  
+  
     }
-    console.log(this.searchResults);
+    this.modalPicture=this.searchResults[0].imageUrl;
+    this.message=this.searchResults[0].message;
+    this.personName=this.searchResults[0].name ; 
+
+    //console.log(this.searchResults);
   }
   
+
+  CloseModel() {
+    const modelDiv = document.getElementById('myModal');
+    if (modelDiv != null) {
+      modelDiv.style.display = 'none';
+    }
+  }
 
 }
