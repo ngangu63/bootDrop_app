@@ -23,42 +23,47 @@ export class AppComponent {
 
 
   title = 'myDropDown-app';
-  isSearchEnabled: boolean = false;
-  searchQuery: string ="";
+  isSearchEnabled: boolean = true;
+  searchQuery: string = "";
   searchResults: BigPicture[] = [];
 
-  modalPicture: string ="";
-  message: string ="";
-  personName: string ="";
+  modalPicture: string = "";
+  message: string = "";
+  personName: string = "";
 
 
   constructor(private pictureService: BigPictureService) { }
 
 
   toggleSearch(enable: boolean) {
-    this.isSearchEnabled = enable;
+    this.isSearchEnabled = true;
   }
 
 
   onChildActivate(componentRef: any) {
     // Enable search only for certain child components
     this.isSearchEnabled = componentRef instanceof LesDirigeantsComponent || componentRef instanceof OthersMembersComponent;
-  
+
   }
 
-  onSearch(): void{
-   
+  onSearch(): void {
+
     if (this.searchQuery.trim()) {
-    this.searchResults= this.pictureService.getBigPictureByName(this.searchQuery);  
-  
-    }
-    this.modalPicture=this.searchResults[0].imageUrl;
-    this.message=this.searchResults[0].message;
-    this.personName=this.searchResults[0].name ; 
+      this.searchResults = this.pictureService.getBigPictureByName(this.searchQuery);
 
-    //console.log(this.searchResults);
+    }
+    if (this.searchResults.length == 0) {
+      this.personName = "Aucun nom trouvé";
+      this.modalPicture = "";
+      this.message = "";
+    } else {
+
+      this.modalPicture = this.searchResults[0].imageUrl;
+      this.message = this.searchResults[0].message;
+      this.personName = this.searchResults[0].name;
+    }
   }
-  
+
 
   CloseModel() {
     const modelDiv = document.getElementById('myModal');
