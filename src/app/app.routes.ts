@@ -10,6 +10,7 @@ import { FinanceComponent } from './finance/finance.component';
 import { LesDirigeantsComponent } from './les-dirigeants/les-dirigeants.component';
 import { OthersMembersComponent } from './others-members/others-members.component';
 import { DeclIntentionComponent } from './decl-intention/decl-intention.component';
+import { Mp3PlayerComponent } from './mp3-player/mp3-player.component';
 
 
 export const routes: Routes = [
@@ -19,6 +20,7 @@ export const routes: Routes = [
   { path: 'TousLesMembres', component: OthersMembersComponent },
   { path: 'Contact', component: ContactComponent },
   { path: 'Finance', component: FinanceComponent },
+  { path: 'Nécrologie', component: Mp3PlayerComponent},
   { path: 'Jesus1/:videoId', component: YoutubeComponent },
   { path: 'Jesus2/:videoId', component: YoutubeComponent }, 
   { path: 'Jesus3/:videoId', component: YoutubeComponent }, 
