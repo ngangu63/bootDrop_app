@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
+import { Component,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { Howl } from 'howler';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-mp3-player',
   standalone: true,
-  imports: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [CommonModule],
   templateUrl: './mp3-player.component.html',
   styleUrl: './mp3-player.component.css'
 })
 export class Mp3PlayerComponent {
   player!: Howl;
   isPlaying: boolean = false;
+  emoji: string = "😭";
 
   initializePlayer() {
     this.player = new Howl({

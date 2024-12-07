@@ -1,5 +1,8 @@
+
+
 <div class="mp3-player container text-center py-4" style="margin-top: 50px;">
-    <h3 class="mb-4">Hommage à nos morts</h3>
+    <h3 class="mb-4">Hommage à nos morts </h3>
+    <h1 *ngIf="emoji" style="font-size: 100px;">{{emoji}}</h1> 
     <div class="btn-group" role="group" aria-label="MP3 Player Controls">
       <button 
         class="btn btn-primary" 
@@ -19,4 +22,5 @@
       </button>
     </div>
   </div>
+  
   
