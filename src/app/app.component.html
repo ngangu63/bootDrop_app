@@ -74,6 +74,63 @@
                 <a class="nav-link" href="Nécrologie">Nécrologie</a>
               </li>
 
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  🎄<span style="color:red">🎄</span>Noël<span style="color:red">🎄</span>🎄
+                </a>
+                <ul class="dropdown-menu">
+
+                  <li><a class="dropdown-item" [routerLink]="['/HolyNight', 'RsWUWzai8P8']"> O Holy Night</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+
+                  <li><a class="dropdown-item" [routerLink]="['/Angels', 'yVjdGRp53_M']">Angels We Have Heard On
+                      High</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li><a class="dropdown-item" [routerLink]="['/SilentNight', 'wghk2Wkt28o']">Silent Night</a></li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" [routerLink]="['/FelizNavidad', '8eTA-AF4-bw']">Feliz Navidad</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" [routerLink]="['/Noël', 'RH-xd5bPKTA']">Do they know it is Chrismas?</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" [routerLink]="['/LastChristmas', 'E8gmARGvPlI']">Last Christmas</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" [routerLink]="['/USA', '9AjkUyX0rVw']">USA for Africa</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" [routerLink]="['/SantaClause', 'HUlmzer_5TM']">Santa Claus Is Coming</a>
+                  </li>
+
+                </ul>
+              </li>
+
+
+
+
+
+
+
+
+
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="loisirDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -94,7 +151,7 @@
                   <li><a class="dropdown-item" [routerLink]="['/Evelyna', '6kUpiHuqvik']">Evelyna</a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/JoëlPhoto', '-a_02lS-lg0']">Joël photo</a></li>
-                  <hr class="dropdown-divider">             
+                  <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Souvenir1', 'l77Hw47dEDE']">Lemba Lemba</a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Souvenir2', 'xhxM5RqqDf0']">Matoba</a></li>
@@ -106,9 +163,9 @@
               </li>
 
             </ul>
- 
 
-            <form  class="d-flex" role="search" (ngSubmit)="onSearch()">
+
+            <form class="d-flex" role="search" (ngSubmit)="onSearch()">
               <input [(ngModel)]="searchQuery" name="search" class="form-control me-2" type="search"
                 placeholder="Cherchez un nom" aria-label="Search" required>
               <button class="btn btn-outline-success" type="submit" class="picture-card" data-bs-toggle="modal"
