@@ -34,6 +34,8 @@ export const routes: Routes = [
   { path: 'SantaClause/:videoId', component: YoutubeComponent },  
   { path: 'Angels/:videoId', component: YoutubeComponent }, 
   { path: 'SilentNight/:videoId', component: YoutubeComponent }, 
+  { path: 'CarelessWhisper/:videoId', component: YoutubeComponent },
+  { path: 'whenIseeYouAngain/:videoId', component: YoutubeComponent },
   { path: 'LastChristmas/:videoId', component: YoutubeComponent },
   { path: 'JoëlPhoto/:videoId', component: YoutubeComponent },
   { path: 'Longo/:videoId', component: YoutubeComponent },
