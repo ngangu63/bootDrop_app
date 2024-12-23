@@ -43,6 +43,7 @@ export const routes: Routes = [
   { path: 'Souvenir2/:videoId', component: YoutubeComponent },
   { path: 'Souvenir3/:videoId', component: YoutubeComponent },
   { path: 'Souvenir4/:videoId', component: YoutubeComponent },
+  { path: 'Deliya/:videoId', component: YoutubeComponent },
   { path: 'Messages', component: MessagesComponent },
   { path: 'ROI', component: ROIComponent },
   { path: 'Status', component: StatusComponent },
