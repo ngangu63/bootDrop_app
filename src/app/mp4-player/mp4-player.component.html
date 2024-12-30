@@ -4,7 +4,7 @@
 
     <!-- Video Player -->
     <div *ngIf="isVideo">
-        <video id="video-player" width="100%" controls>
+        <video id="video-player" width="100%" defaultMuted autoplay controls>
             <source [src]="fileSource" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
