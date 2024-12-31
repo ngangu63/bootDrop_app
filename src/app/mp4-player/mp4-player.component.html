@@ -1,10 +1,10 @@
 <div class="mp3-player container text-center py-4">
 
-    <h3 class="mb-4">❤️ <span style="font-family: 'Courier New', monospace;">Lukala</span>❤️</h3>
+    <h3 class="mb-4">🌹<span style="font-family: 'Courier New', monospace;">Lukala</span>🌹</h3>
 
     <!-- Video Player -->
     <div *ngIf="isVideo">
-        <video id="video-player" width="100%" defaultMuted autoplay controls>
+        <video id="video-player" width="100%"   autoplay loop muted playsinline>
             <source [src]="fileSource" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
