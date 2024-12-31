@@ -44,7 +44,8 @@
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="Finance">Finance</a></li>
+                  <li><a class="dropdown-item" href="Finance" data-bs-toggle="modal" data-bs-target="#passwordModal"
+                      (click)="isModalOpen =true">Finance</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -126,8 +127,9 @@
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" [routerLink]="['/whenIseeYouAngain', '3R878g-SppU']">When Will I See You Again</a>
-                  </li>                 
+                  <li><a class="dropdown-item" [routerLink]="['/whenIseeYouAngain', '3R878g-SppU']">When Will I See You
+                      Again</a>
+                  </li>
                 </ul>
               </li>
 
@@ -195,7 +197,7 @@
 
 
 
-  <!-- The Modal -->
+  <!-- The Modal 1-->
   <div class="modal fade" id="searchModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -227,16 +229,35 @@
               </div>
             </div>
           </div>
-
         </div>
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" (click)="CloseModel()" data-bs-dismiss="modal">Close</button>
-        </div>
-
       </div>
     </div>
   </div>
+
+  <!-- The Modal 2-->
+  <div class="modal fade" id="passwordModal">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Entrez le mot de passe </h5>
+
+          <button type="button" class="btn-close" (click)="ClosepassModel()" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="password" class="form-control" [(ngModel)]="password" placeholder="Enter password">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" (click)="checkPassword('/Finance')">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- The Modal 2 end-->
 
   <div class="fixed-bottom">
     <app-myfooter></app-myfooter>

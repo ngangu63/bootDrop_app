@@ -31,8 +31,22 @@ export class AppComponent {
   message: string = "";
   personName: string = "";
 
+  isModalOpen = false;
+  password = '';
+  validPassword = 'Ngipiti2025';
+
 
   constructor(private pictureService: BigPictureService) { }
+
+  checkPassword(route: string): void {
+    if (this.password === this.validPassword) {
+      //console.log(route)
+      this.isModalOpen = false;
+      window.location.href = route;
+    } else {
+      alert('Invalid password!');
+    }
+  }
 
 
   toggleSearch(enable: boolean) {
@@ -67,6 +81,13 @@ export class AppComponent {
 
   CloseModel() {
     const modelDiv = document.getElementById('myModal');
+    if (modelDiv != null) {
+      modelDiv.style.display = 'none';
+    }
+  }
+
+  ClosepassModel() {
+    const modelDiv = document.getElementById('passwordModal');
     if (modelDiv != null) {
       modelDiv.style.display = 'none';
     }
