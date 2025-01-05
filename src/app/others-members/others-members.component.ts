@@ -13,10 +13,10 @@ import { BigPictureService } from '../big-picture.service';
 export class OthersMembersComponent implements OnInit {
 
   pictures: BigPicture[] = [];
-  numberpicture = 3;
   modalPicture: string = "";
   personName: string = "";
   message: string = "";
+
 
   constructor(private pictureService: BigPictureService) { }
 
@@ -25,14 +25,9 @@ export class OthersMembersComponent implements OnInit {
     this.pictures = this.pictureService.getBigPictures();
     this.getMemberPicture(this.pictures);
 
+
   }
 
-  currentSlideIndex = 0;
-
-  get currentPictures(): BigPicture[] {
-    const start = this.currentSlideIndex * this.numberpicture;
-    return this.pictures.slice(start, start + this.numberpicture);
-  }
 
   getMemberPicture(pictures: BigPicture[]) {
     let Mypictures: BigPicture[] = [];
@@ -42,19 +37,9 @@ export class OthersMembersComponent implements OnInit {
     this.pictures = Mypictures;
   }
 
-  nextSlide() {
-    if ((this.currentSlideIndex + 1) * this.numberpicture < this.pictures.length) {
-      this.currentSlideIndex++;
-    }
-  }
 
-  previousSlide() {
-    if (this.currentSlideIndex > 0) {
-      this.currentSlideIndex--;
-    }
-  }
 
- 
+
   openPicture(picture: BigPicture): void {
     const modelDiv = document.getElementById('myModal');
     this.modalPicture = picture.imageUrl;
@@ -73,6 +58,5 @@ export class OthersMembersComponent implements OnInit {
     }
   }
 }
-
 
 

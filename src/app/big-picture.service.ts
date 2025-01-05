@@ -43,7 +43,6 @@ export class BigPictureService {
     { name: 'Charlotte Nsongo', role: '', location: 'France', imageUrl: '', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Malu', role: '', location: 'France', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Marie Landu', role: '', location: 'France', imageUrl: '', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
-    { name: 'Mfumu Buala', role: '', location: 'Belgique', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Fuakuingi Every', role: '', location: 'France', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Niorra Ntonzi', role: '', location: 'Canada', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Nzayambela', role: '', location: 'France', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
@@ -70,7 +69,6 @@ export class BigPictureService {
   ];
 
 
-
   // Method to return the entire array of Pictures
   getBigPictures(): BigPicture[] {
     return this.bigPictures;
@@ -87,7 +85,6 @@ export class BigPictureService {
   getBigPictureByName(name: string): BigPicture[] {
     return this.bigPictures.filter(picture => picture.name.toLowerCase().includes(name.toLowerCase()));
   }
-
 
 
 

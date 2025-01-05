@@ -11,62 +11,31 @@ import { BigPictureService } from '../big-picture.service';
   styleUrl: './les-dirigeants.component.css'
 })
 export class LesDirigeantsComponent implements OnInit {
- 
   pictures: BigPicture[] = [];
-  numberpicture = 3;
-  modalPicture: string ="";
-  personName: string ="";
-  message: string ="";
+  modalPicture: string = "";
+  personName: string = "";
+  message: string = "";
 
-  constructor(private pictureService: BigPictureService) { }
+  constructor(private pictureService: BigPictureService) {}
 
   ngOnInit(): void {
     // Get the entire array of Pictures
     this.pictures = this.pictureService.getBigPictures();
     this.getDirigeantMemberPicture(this.pictures);
-
   }
-
-  currentSlideIndex = 0;
-
 
   getDirigeantMemberPicture(pictures: BigPicture[]) {
-    let Mypictures: BigPicture[] = [];
-    for (let i = 0; i < pictures.length; i++) {
-      if (pictures[i].role) Mypictures.push(pictures[i]);
-    }
-    this.pictures = Mypictures;
+    this.pictures = pictures.filter(picture => picture.role);
   }
-
-
-  get currentPictures(): BigPicture[] {
-    const start = this.currentSlideIndex * this.numberpicture;
-    return this.pictures.slice(start, start + this.numberpicture);
-  }
-
-  nextSlide() {
-    if ((this.currentSlideIndex + 1) * this.numberpicture < this.pictures.length) {
-      this.currentSlideIndex++;
-    }
-  }
-
-  previousSlide() {
-    if (this.currentSlideIndex > 0) {
-      this.currentSlideIndex--;
-    }
-  }
-
-
 
   openPicture(picture: BigPicture): void {
     const modelDiv = document.getElementById('myModal');
-    this.modalPicture=picture.imageUrl;
-    this.personName=picture.name;
-    this.message=picture.message;
+    this.modalPicture = picture.imageUrl;
+    this.personName = picture.name;
+    this.message = picture.message;
     if (modelDiv != null) {
       modelDiv.style.display = 'block';
     }
-
   }
 
   CloseModel() {
@@ -75,5 +44,4 @@ export class LesDirigeantsComponent implements OnInit {
       modelDiv.style.display = 'none';
     }
   }
-
 }
