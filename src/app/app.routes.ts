@@ -27,7 +27,7 @@ export const routes: Routes = [
   { path: 'Kelya/:videoId', component: YoutubeComponent },
   { path: 'USA/:videoId', component: YoutubeComponent },
   { path: 'Mikolo/:videoId', component: YoutubeComponent },
-  { path: 'Evelyna/:videoId', component: YoutubeComponent },
+  { path: 'BonbonSucré/:videoId', component: YoutubeComponent },
   { path: 'Noël/:videoId', component: YoutubeComponent },
   { path: 'HolyNight/:videoId', component: YoutubeComponent },
   { path: 'FelizNavidad/:videoId', component: YoutubeComponent }, 
