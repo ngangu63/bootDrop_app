@@ -76,14 +76,30 @@ export class BigPictureService {
 
   searchBigPictureByName(query: string): Observable<BigPicture[] | undefined> {
     const filteredNames = this.bigPictures.filter(picture =>
-      picture.name.toLowerCase().includes(query.toLowerCase())
+      picture.name.toLowerCase().includes(query.toLowerCase().trim())
     );
     return of(filteredNames); // Simulating an API call
   }
 
   // Method to return a Picture by name
   getBigPictureByName(name: string): BigPicture[] {
-    return this.bigPictures.filter(picture => picture.name.toLowerCase().includes(name.toLowerCase()));
+    let retPict: BigPicture[] = this.bigPictures.filter(picture => picture.name.toLowerCase().includes(name.toLowerCase().trim()));
+    if (retPict.length != 0) return retPict;
+    else return this.lookAgain(this.bigPictures, name);
+
+  }
+  lookAgain(bigPictures: BigPicture[], name: string): BigPicture[] {
+
+    let retPict: BigPicture[] = [];
+
+    for (const bigPicture of bigPictures) {
+
+      if (this.isSubstringWithTolerance(name.toLowerCase().trim(), bigPicture.name.toLowerCase().trim())) {
+        retPict.push(bigPicture);
+      }
+    }
+    return retPict;
+
   }
 
 
@@ -92,4 +108,38 @@ export class BigPictureService {
   getBigPictureByIndex(index: number): BigPicture | undefined {
     return this.bigPictures[index];
   }
+
+
+
+  isSubstringWithTolerance(shortStr: string, longStr: string): boolean {
+    // Helper function to check if two strings of the same length differ by at most one character
+    function differByOneChar(word1: string, word2: string): boolean {
+      if (word1.length !== word2.length) return false;
+
+      let mismatchCount = 0;
+
+      for (let i = 0; i < word1.length; i++) {
+        if (word1[i] !== word2[i]) {
+          mismatchCount++;
+          if (mismatchCount > 1) return false;
+        }
+      }
+
+      return mismatchCount === 1;
+    }
+
+    // Split the long string into words
+    const words = longStr.split(" ");
+
+    // Check if any word matches the short string exactly or differs by one character
+    for (const word of words) {
+      if (word === shortStr || differByOneChar(word, shortStr)) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+
 }

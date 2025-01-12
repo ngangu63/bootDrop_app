@@ -63,7 +63,7 @@ export class AppComponent {
   onSearch(): void {
 
     if (this.searchQuery.trim()) {
-      this.searchResults = this.pictureService.getBigPictureByName(this.searchQuery);
+      this.searchResults = this.pictureService.getBigPictureByName(this.searchQuery.trim());
 
     }
     if (this.searchResults.length == 0) {
