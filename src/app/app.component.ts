@@ -39,7 +39,8 @@ export class AppComponent {
   constructor(private pictureService: BigPictureService) { }
 
   checkPassword(route: string): void {
-    if (this.password === this.validPassword) {
+    //if (this.password === this.validPassword) {
+    if (true) {
       //console.log(route)
       this.isModalOpen = false;
       window.location.href = route;
