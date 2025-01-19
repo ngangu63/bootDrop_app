@@ -42,7 +42,7 @@ export const routes: Routes = [
   { path: 'Nzale/:videoId', component: YoutubeComponent },
   { path: 'Longo/:videoId', component: YoutubeComponent },
   { path: 'Souvenir1/:videoId', component: YoutubeComponent },
-  { path: 'AmbianceKatho/:videoId', component: YoutubeComponent },
+  { path: 'AdiosTete/:videoId', component: YoutubeComponent },
   { path: 'Souvenir3/:videoId', component: YoutubeComponent },
   { path: 'Souvenir4/:videoId', component: YoutubeComponent },
   { path: 'Deliya/:videoId', component: YoutubeComponent },
