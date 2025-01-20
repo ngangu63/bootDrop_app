@@ -24,6 +24,8 @@ export const routes: Routes = [
   { path: 'Jesus1/:videoId', component: YoutubeComponent },
   { path: 'Inoussa/:videoId', component: YoutubeComponent },
   { path: 'Beyanga/:videoId', component: YoutubeComponent },
+  { path: 'BonSamaritain/:videoId', component: YoutubeComponent },
+  { path: 'Monzo/:videoId', component: YoutubeComponent },
   { path: 'JamaisKolonga/:videoId', component: YoutubeComponent },
   { path: 'KaribouYaBintou/:videoId', component: YoutubeComponent },
   { path: 'Jesus3/:videoId', component: YoutubeComponent },
