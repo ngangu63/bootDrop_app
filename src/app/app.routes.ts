@@ -23,7 +23,7 @@ export const routes: Routes = [
   { path: 'Nécrologie', component: Mp3PlayerComponent },
   { path: 'Ndaya/:videoId', component: YoutubeComponent },
   { path: 'Inoussa/:videoId', component: YoutubeComponent },
-  { path: 'Beyanga/:videoId', component: YoutubeComponent },
+  { path: 'PesaPosition/:videoId', component: YoutubeComponent },
   { path: 'BonSamaritain/:videoId', component: YoutubeComponent },
   { path: 'Monzo/:videoId', component: YoutubeComponent },
   { path: 'JamaisKolonga/:videoId', component: YoutubeComponent },
