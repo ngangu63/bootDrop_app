@@ -21,7 +21,7 @@ export const routes: Routes = [
   { path: 'Contact', component: ContactComponent },
   { path: 'Finance', component: FinanceComponent },
   { path: 'Nécrologie', component: Mp3PlayerComponent },
-  { path: 'Jesus1/:videoId', component: YoutubeComponent },
+  { path: 'Ndaya/:videoId', component: YoutubeComponent },
   { path: 'Inoussa/:videoId', component: YoutubeComponent },
   { path: 'Beyanga/:videoId', component: YoutubeComponent },
   { path: 'BonSamaritain/:videoId', component: YoutubeComponent },
