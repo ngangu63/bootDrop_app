@@ -7,10 +7,40 @@
     height: 200px; 
     z-index: 1;
      position: relative;">
-      <div class="text-white">
+      <img src="assets/images/LogoLND.jpeg" class="position-absolute top-0 start-0" style="width: 200px; height: 200px;"
+        alt="Example Image">
+
+
+
+
+
+
+      <!--         <div class="col-4" style="width: 200px; height: 200px; margin-left:0px;margin-top:0px;">
+          <img src="assets/images/LogoLND.jpeg" class="img-fluid rounded" alt="logo">
+        </div>  -->
+
+      <!--         <div class="col-8 text-white">
+          <h1 class="mb-3">Lukala Ngangu Développement</h1>
+        </div> -->
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8 text-white text-center">
+            <h1 class="mb-3">Lukala Ngangu Développement</h1>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <!--      <div><img src="assets/images/LogoLND.jpeg" class="img-fluid rounded" alt="logo" style="width: 5rem;"></div>
+      <div class="text-white"> 
         <h1 class="mb-3">Lukala Ngangu Développement</h1>
       </div>
-    </div>
+    </div> -->
     <div>
       <nav class="navbar navbar-expand-lg border-bottom border-body" style="width: 100%;background-color: #e3f2fd;">
         <div class="container-fluid">
@@ -57,6 +87,16 @@
                   Documents
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Fonctionnement">Autorisation de Fonctionnement</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li><a class="dropdown-item" href="Viabilite">Etat des lieux de viabilite</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
                   <li><a class="dropdown-item" href="ROI">Règlement d'ordre intérieur</a></li>
                   <li>
                     <hr class="dropdown-divider">
@@ -78,7 +118,7 @@
 
 
 
-<!--               <li class="nav-item dropdown">
+              <!--               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   🎄<span style="color:red">🎄</span>Noël<span style="color:red">🎄</span>🎄
@@ -150,15 +190,18 @@
                 <ul class="dropdown-menu" aria-labelledby="loisirDropdown" style="z-index: 200;">
                   <li><a class="dropdown-item" [routerLink]="['/Ndaya', 'hNco9iib8nM']">Ndaya</a></li>
                   <hr class="dropdown-divider">
-                  <li><a class="dropdown-item" [routerLink]="['/BonSamaritain', '8bMc6-VWvMM']">Le bon samaritain</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/BonSamaritain', '8bMc6-VWvMM']">Le bon samaritain</a>
+                  </li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Inoussa', 'NQLNuCZGQck']">Inoussa </a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/PesaPosition', 'iIwgqiSKGCk']">Pesa Position </a></li>
                   <hr class="dropdown-divider">
-                  <li><a class="dropdown-item" [routerLink]="['/JamaisKolonga', 'Hhue5hh_IOM']">Jamais Kolonga </a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/JamaisKolonga', 'Hhue5hh_IOM']">Jamais Kolonga </a>
+                  </li>
                   <hr class="dropdown-divider">
-                  <li><a class="dropdown-item" [routerLink]="['/KaribouYaBintou', '8kR_o9daD2I']">Karibou ya Bintou </a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/KaribouYaBintou', '8kR_o9daD2I']">Karibou ya Bintou
+                    </a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Kelya', '-t6_DXt7jW8']">Kelya</a></li>
                   <hr class="dropdown-divider">
@@ -178,7 +221,8 @@
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Souvenir3', 'T9CPEkxsNxE']">Nono</a></li>
                   <hr class="dropdown-divider">
-                  <li><a class="dropdown-item" [routerLink]="['/Souvenir4', 'uUzK50qrITw']">Faute Ya Commerçant</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/Souvenir4', 'uUzK50qrITw']">Faute Ya Commerçant</a>
+                  </li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item" [routerLink]="['/Souvenir1', 'l77Hw47dEDE']">Lemba Lemba</a></li>
                 </ul>

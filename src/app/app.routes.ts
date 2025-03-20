@@ -11,6 +11,9 @@ import { LesDirigeantsComponent } from './les-dirigeants/les-dirigeants.componen
 import { OthersMembersComponent } from './others-members/others-members.component';
 import { DeclIntentionComponent } from './decl-intention/decl-intention.component';
 import { Mp3PlayerComponent } from './mp3-player/mp3-player.component';
+import { ViabiliteComponent } from './viabilite/viabilite.component';
+import { FonctionnementComponent } from './fonctionnement/fonctionnement.component';
+
 
 
 export const routes: Routes = [
@@ -52,6 +55,9 @@ export const routes: Routes = [
   { path: 'ROI', component: ROIComponent },
   { path: 'Status', component: StatusComponent },
   { path: 'Intention', component: DeclIntentionComponent },
+  { path: 'Viabilite', component: ViabiliteComponent },
+  { path: 'Fonctionnement', component: FonctionnementComponent },
+ 
   { path: '**', component: HomeComponent }
 ];
 
