@@ -1,27 +1,16 @@
-<div style="width: 95%;margin: auto;">
+<div style="width: 95%; margin: auto">
   <div>
-    <div class="p-5 text-center bg-image rounded-3" style="
-    background-image: url('assets/images/CantineVersion2.jpg');
-    background-repeat: no-repeat;
-    background-size:100%;
-    height: 200px; 
-    z-index: 1;
-     position: relative;">
-      <img src="assets/images/LogoLND.jpeg" class="position-absolute top-0 start-0" style="width: 200px; height: 200px;"
-        alt="Example Image">
 
+    <div class="position-relative" style="width: 100%; height: 200px;">
+      <div class="p-5 text-center bg-image w-100 h-100 rounded-3" style="background-image: url('assets/images/CantineVersion2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                position: relative;">
+        <img src="assets/images/LogoLND.jpeg" class="position-absolute top-0 start-0"
+          style="width: 20%; height: auto; max-width: 200px; max-height: 200px;" alt="Example Image">
+     
 
-
-
-
-
-      <!--         <div class="col-4" style="width: 200px; height: 200px; margin-left:0px;margin-top:0px;">
-          <img src="assets/images/LogoLND.jpeg" class="img-fluid rounded" alt="logo">
-        </div>  -->
-
-      <!--         <div class="col-8 text-white">
-          <h1 class="mb-3">Lukala Ngangu Développement</h1>
-        </div> -->
 
       <div class="container">
         <div class="row justify-content-center">
@@ -30,6 +19,8 @@
           </div>
         </div>
       </div>
+    </div>
+      
 
 
 
@@ -231,7 +222,7 @@
             </ul>
 
 
-            <form class="d-flex" role="search" (ngSubmit)="onSearch()">
+            <form class="d-flex mx-auto" role="search" (ngSubmit)="onSearch()">
               <input [(ngModel)]="searchQuery" name="search" class="form-control me-2" type="search"
                 placeholder="Cherchez un nom" aria-label="Search" required>
               <button class="btn btn-outline-success" type="submit" class="picture-card" data-bs-toggle="modal"
@@ -312,7 +303,7 @@
 
   <!-- The Modal 2 end-->
 
-  <div class="fixed-bottom">
+  <div class="fixed-bottom" style="width: 95%; margin: auto">
     <app-myfooter></app-myfooter>
   </div>
 </div>
