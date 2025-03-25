@@ -30,6 +30,7 @@ export class BigPictureService {
     { name: 'Silumpunisa Baron Luyituku', role: '', location: 'DR Congo', imageUrl: 'assets/images/membres/Silumpunisa1.jpeg', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Jean Marc Simbi', role: '', location: 'États-Unis', imageUrl: 'assets/images/membres/JeanMarcSimbi.jpeg', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Jason Tamba', role: '', location: 'États-Unis', imageUrl: 'assets/images/membres/JasonTamba.jpeg', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
+    { name: 'Jose Nzayambela', role: '', location: 'France', imageUrl: 'assets/images/membres/JosyNzayambela.jpeg', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Fidele Menavanza', role: '', location: 'États-Unis', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Clémentine Buaka', role: '', location: 'France', imageUrl: '', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Constant Lutonda', role: '', location: 'Brésil', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
@@ -69,7 +70,6 @@ export class BigPictureService {
     { name: 'Glody Ngeyitala ', role: '', location: 'États-Unis', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Edo Makobokele', role: '', location: 'France', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Ma Maguy', role: '', location: 'France', imageUrl: '', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
-    { name: 'Jose Nzayambela', role: '', location: 'France', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Teresa Maria Kindomba', role: '', location: "France", imageUrl: '', gender: 0, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
     { name: 'Anaclet Masamba', role: '', location: 'DR Congo', imageUrl: '', gender: 1, defaultImage: 'assets/images/Remy_Cravate1.jpg', profession: '', message: '', LinkedIn: '' },
 
