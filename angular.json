@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash"
+            ],
             "outputPath": "dist/my-drop-down-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -30,7 +33,6 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-             
             ]
           },
           "configurations": {
