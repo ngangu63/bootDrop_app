@@ -38,6 +38,7 @@ export const routes: Routes = [
   { path: 'NzotoMoko/:videoId', component: YoutubeComponent }, 
   { path: 'ZéroFaute/:videoId', component: YoutubeComponent }, 
   { path: 'Coucou/:videoId', component: YoutubeComponent }, 
+  { path: 'EbaleYaZaire/:videoId', component: YoutubeComponent }, 
 /*   { path: 'Noël/:videoId', component: YoutubeComponent },
   { path: 'HolyNight/:videoId', component: YoutubeComponent },
   { path: 'FelizNavidad/:videoId', component: YoutubeComponent }, 
