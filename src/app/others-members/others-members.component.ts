@@ -32,6 +32,9 @@ export class OthersMembersComponent implements OnInit {
   getMemberPicture(pictures: BigPicture[]) {
     let Mypictures: BigPicture[] = [];
     for (let i = 0; i < pictures.length; i++) {
+      if (pictures[i].role) Mypictures.push(pictures[i]);
+    }
+    for (let i = 0; i < pictures.length; i++) {
       if (!pictures[i].role) Mypictures.push(pictures[i]);
     }
     this.pictures = Mypictures;
