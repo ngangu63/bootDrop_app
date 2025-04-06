@@ -19,11 +19,12 @@
               <span *ngIf="j<= 2 && row[0]===null" style="font-size: 0;">{{ cell }}</span>
               <span *ngIf="j<= 2 && row[0]!==null" style="text-align: center;">{{ cell }}</span>
               <span *ngIf="j>= 2 && row[0]===null" style="font-size: 0;">{{ cell }}</span>
-              <span *ngIf="j>2 && row[1]==='$' ">{{ cell | currency:'USD':'symbol':'1.2-2'}}</span>
+              <span *ngIf="j>2 && row[1]==='$'">{{ cell | currency:'USD':'symbol':'1.2-2'}}</span>
               <span *ngIf="j>2 && row[1]==='€'">{{ cell | currency:'EUR':'symbol':'1.2-2'}}</span>
-              <span *ngIf="j>2 && row[0]==='TOTAL (Dollar)'" style="font-weight: bold;">{{ cell | currency:'USD':'symbol':'1.2-2'}}</span>
-              <span *ngIf="j>2 && row[0]==='TOTAL (Euro)'" style="font-weight: bold;">{{ cell | currency:'EUR':'symbol':'1.2-2'}}</span>
-
+              <span *ngIf="j>2 && row[0]==='TOTAL (Dollar)'" style="font-weight: bold;">{{ cell |
+                currency:'USD':'symbol':'1.2-2'}}</span>
+              <span *ngIf="j>2 && row[0]==='TOTAL (Euro)'" style="font-weight: bold;">{{ cell |
+                currency:'EUR':'symbol':'1.2-2'}}</span>
             </td>
           </tr>
 
@@ -40,7 +41,7 @@
     </div>
   </div>
 
-  
+
 
 
 </div>
