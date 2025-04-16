@@ -13,6 +13,7 @@ import { DeclIntentionComponent } from './decl-intention/decl-intention.componen
 import { Mp3PlayerComponent } from './mp3-player/mp3-player.component';
 import { ViabiliteComponent } from './viabilite/viabilite.component';
 import { FonctionnementComponent } from './fonctionnement/fonctionnement.component';
+import { ActOfNotaryComponent } from './act-of-notary/act-of-notary.component';
 
 
 
@@ -63,6 +64,7 @@ export const routes: Routes = [
   { path: 'Intention', component: DeclIntentionComponent },
   { path: 'Viabilite', component: ViabiliteComponent },
   { path: 'Fonctionnement', component: FonctionnementComponent },
+  { path: 'Notarie', component: ActOfNotaryComponent },
  
   { path: '**', component: HomeComponent }
 ];
