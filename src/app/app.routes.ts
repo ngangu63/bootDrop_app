@@ -43,6 +43,7 @@ export const routes: Routes = [
   { path: 'EbaleYaZaire/:videoId', component: YoutubeComponent }, 
   { path: 'Maya/:videoId', component: YoutubeComponent }, 
   { path: 'MayaVersion2/:videoId', component: YoutubeComponent },
+  { path: 'Ngungi/:videoId', component: YoutubeComponent },
 /*   { path: 'Noël/:videoId', component: YoutubeComponent },
   { path: 'HolyNight/:videoId', component: YoutubeComponent },
   { path: 'FelizNavidad/:videoId', component: YoutubeComponent }, 
