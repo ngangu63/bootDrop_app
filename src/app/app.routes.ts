@@ -14,6 +14,9 @@ import { Mp3PlayerComponent } from './mp3-player/mp3-player.component';
 import { ViabiliteComponent } from './viabilite/viabilite.component';
 import { FonctionnementComponent } from './fonctionnement/fonctionnement.component';
 import { ActOfNotaryComponent } from './act-of-notary/act-of-notary.component';
+import { VueEnPlanComponent } from './vue-en-plan/vue-en-plan.component';
+import { FicheDeProjectComponent } from './fiche-de-project/fiche-de-project.component';
+import { PlanStrategiqueComponent } from './plan-strategique/plan-strategique.component';
 
 
 
@@ -44,6 +47,7 @@ export const routes: Routes = [
   { path: 'Maya/:videoId', component: YoutubeComponent }, 
   { path: 'MayaVersion2/:videoId', component: YoutubeComponent },
   { path: 'Ngungi/:videoId', component: YoutubeComponent },
+  { path: 'Djino/:videoId', component: YoutubeComponent },
 /*   { path: 'Noël/:videoId', component: YoutubeComponent },
   { path: 'HolyNight/:videoId', component: YoutubeComponent },
   { path: 'FelizNavidad/:videoId', component: YoutubeComponent }, 
@@ -70,6 +74,11 @@ export const routes: Routes = [
   { path: 'Viabilite', component: ViabiliteComponent },
   { path: 'Fonctionnement', component: FonctionnementComponent },
   { path: 'Notarie', component: ActOfNotaryComponent },
+  { path: 'vueEnPlan', component: VueEnPlanComponent },
+  { path: 'FicheDeProject1', component: FicheDeProjectComponent },
+  { path: 'PlanStrategique', component: PlanStrategiqueComponent },
+  { path: 'morgue', component: VueEnPlanComponent },
+  
  
   { path: '**', component: HomeComponent }
 ];
