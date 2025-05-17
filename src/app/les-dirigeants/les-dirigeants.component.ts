@@ -4,11 +4,10 @@ import { BigPicture } from '../big-picture';
 import { BigPictureService } from '../big-picture.service';
 
 @Component({
-  selector: 'app-les-dirigeants',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './les-dirigeants.component.html',
-  styleUrl: './les-dirigeants.component.css'
+    selector: 'app-les-dirigeants',
+    imports: [CommonModule],
+    templateUrl: './les-dirigeants.component.html',
+    styleUrl: './les-dirigeants.component.css'
 })
 export class LesDirigeantsComponent implements OnInit {
   pictures: BigPicture[] = [];

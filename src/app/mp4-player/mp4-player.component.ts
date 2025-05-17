@@ -3,12 +3,11 @@ import { Component,CUSTOM_ELEMENTS_SCHEMA, Input, OnInit } from '@angular/core';
 import { Howl } from 'howler';
 
 @Component({
-  selector: 'app-mp4-player',
-  standalone: true,
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [CommonModule],
-  templateUrl: './mp4-player.component.html',
-  styleUrl: './mp4-player.component.css'
+    selector: 'app-mp4-player',
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    imports: [CommonModule],
+    templateUrl: './mp4-player.component.html',
+    styleUrl: './mp4-player.component.css'
 })
 export class Mp4PlayerComponent implements OnInit{
   @Input() fileSource: string = ''; // Input for the file source

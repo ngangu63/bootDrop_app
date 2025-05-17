@@ -20,11 +20,10 @@ interface BigPicture {
 }
 
 @Component({
-  selector: 'app-youtube',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './youtube.component.html',
-  styleUrls: ['./youtube.component.css']
+    selector: 'app-youtube',
+    imports: [CommonModule],
+    templateUrl: './youtube.component.html',
+    styleUrls: ['./youtube.component.css']
 })
 export class YoutubeComponent implements OnInit {
   names: BigPicture[] = [];

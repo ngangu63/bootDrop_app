@@ -3,11 +3,10 @@ import * as XLSX from 'xlsx';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-finance',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './finance.component.html',
-  styleUrl: './finance.component.css'
+    selector: 'app-finance',
+    imports: [CommonModule],
+    templateUrl: './finance.component.html',
+    styleUrl: './finance.component.css'
 })
 export class FinanceComponent implements OnInit{
 

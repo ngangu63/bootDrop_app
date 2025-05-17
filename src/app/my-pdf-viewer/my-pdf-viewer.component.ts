@@ -31,11 +31,10 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-my-pdf-viewer',
-  standalone: true,
-  imports: [PdfViewerModule,CommonModule],
-  templateUrl: './my-pdf-viewer.component.html',
-  styleUrl: './my-pdf-viewer.component.css'
+    selector: 'app-my-pdf-viewer',
+    imports: [PdfViewerModule, CommonModule],
+    templateUrl: './my-pdf-viewer.component.html',
+    styleUrl: './my-pdf-viewer.component.css'
 })
 export class MyPdfViewerComponent {
   pdfSrc = "assets/pdfs/Message_pour_Lukala.pdf";

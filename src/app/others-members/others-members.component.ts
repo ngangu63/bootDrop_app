@@ -4,11 +4,10 @@ import { BigPicture } from '../big-picture';
 import { BigPictureService } from '../big-picture.service';
 
 @Component({
-  selector: 'app-others-members',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './others-members.component.html',
-  styleUrl: './others-members.component.css'
+    selector: 'app-others-members',
+    imports: [CommonModule],
+    templateUrl: './others-members.component.html',
+    styleUrl: './others-members.component.css'
 })
 export class OthersMembersComponent implements OnInit {
 

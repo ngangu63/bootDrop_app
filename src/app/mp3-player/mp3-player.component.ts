@@ -4,12 +4,11 @@ import { CommonModule } from '@angular/common';
 
 
 @Component({
-  selector: 'app-mp3-player',
-  standalone: true,
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [CommonModule],
-  templateUrl: './mp3-player.component.html',
-  styleUrl: './mp3-player.component.css'
+    selector: 'app-mp3-player',
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    imports: [CommonModule],
+    templateUrl: './mp3-player.component.html',
+    styleUrl: './mp3-player.component.css'
 })
 export class Mp3PlayerComponent {
   player!: Howl;
